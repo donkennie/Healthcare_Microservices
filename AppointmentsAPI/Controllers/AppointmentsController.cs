@@ -1,4 +1,4 @@
-using AppointmentsApi.Data;
+
 using AppointmentsApi.Models;
 using AppointmentsApi.Models.Messages;
 using AppointmentsApi.Protos;
