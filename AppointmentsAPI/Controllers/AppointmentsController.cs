@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using AppointmentsApi.Models;
 using AppointmentsApi.Services;
 using Grpc.Net.Client;
+using AppointmentsApi.Protos;
 
 
 namespace AppointmentsApi.Controllers
