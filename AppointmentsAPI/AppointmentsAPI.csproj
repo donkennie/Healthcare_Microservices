@@ -34,10 +34,6 @@
   <Protobuf Include="Protos\documents.proto" GrpcServices="Client" />
 </ItemGroup>
 
- <ItemGroup>
-   <Folder Include="Commands\CreateAppoinments\" />
- </ItemGroup>
-
   
 
 </Project>

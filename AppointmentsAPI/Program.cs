@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using AppointmentsApi.Services;
 using MassTransit;
 using Notification.Service;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -37,7 +38,7 @@ builder.Services.AddMassTransit(x =>
 // Other service configurations
 
 builder.Services.AddTransient<IEmailService, EmailService>();
-
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
