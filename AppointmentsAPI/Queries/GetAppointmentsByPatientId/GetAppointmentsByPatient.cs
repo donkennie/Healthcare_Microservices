@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.Json;
+using AppointmentsApi.Data;
 using AppointmentsApi.Models.DTOs;
 using AppointmentsApi.Services;
 using MediatR;

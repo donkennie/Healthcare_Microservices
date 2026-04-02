@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppointmentContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 // Register PatientsApiClient
 builder.Services.AddHttpClient<PatientsApiClient>(client =>
 {
